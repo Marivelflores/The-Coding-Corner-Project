@@ -1,0 +1,570 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 16px;
+}
+
+main {
+    background-color: rgba(0, 0, 0, .92);
+    color: white;
+}
+
+
+
+/**** header and nav bar section for all pages ******/
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height:  8vh;
+    background-color: #000000;
+}
+
+.logo {
+    color: rgb(17, 230, 17);
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links a:hover {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: rgb(17, 230, 17);
+}
+
+.nav-links li {
+    list-style-type: none;
+    margin: 20px;
+    flex-wrap: nowrap;
+}   
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    font-size: 14px;
+    
+}
+
+/************************ index.html ****************************/
+
+.hero-image {
+    background: url(img/Background.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-text {
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3em;
+    letter-spacing: 3px;
+    flex-wrap: wrap;
+}
+
+/** what we do section **/
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 1200px;
+}
+
+.about-section img {
+    height: 65vh;
+    width: auto;
+    z-index: 2;
+}
+
+.text-box {
+    margin-left: 5%;
+    width: 50%;
+}
+
+.about-section h2 {
+    font-size: 1.8rem;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 5px;
+    margin-right: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: rgb(17, 230, 17);
+    
+}
+
+.about-section p {
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 300px;
+    margin-top: 50px;
+    flex-grow: 1;
+    
+}
+
+/** locations section **/
+
+.locations-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 99vw;
+    height: 60vh;
+    position: relative;
+}
+
+.locations-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vmin;
+    
+}
+
+.locations-section h2 {
+    font-size: 1.8rem;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 5px;
+    margin-right: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: rgb(17, 230, 17);
+}
+
+.locations-section p, h3 {
+    font-family: 'Roboto', sans-serif;
+} 
+
+.locations-section p {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-right: 300px;
+    margin-top: 50px;
+    flex-grow: 1; 
+}
+
+.locations-img {
+    width: 70vmin;
+    z-index: 4;
+    position: relative;
+}
+
+address {
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+}
+/************ boxes behind images on index.html *************/
+
+.box-one, .box-two, .box-three {
+    background-color: #4938bb;
+    border: 1px solid #4938bb;
+    position: absolute;
+    display: flex;
+}
+
+.box-one {
+    height: 700px;
+    width: 450px;
+    z-index: 1;
+    margin-top: -100px;
+    margin-left: -1300px;
+    
+}
+
+.box-two {
+    width: 70vmin;
+    height: 45vmin;
+    margin: -51vmin 0px 0px 100px;
+}
+
+.box-three {
+    width: 50vmin;
+    height: 35vmin;
+    z-index: 5;
+    margin: 0px 0px 0px 40vmin;
+}
+
+
+/********************* About Page about.html *****************/
+.about-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 115vh;
+    position: relative;
+    
+}
+.page-title {
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(17, 230, 17);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin: 5vmin;
+
+}
+
+.aboutpage-description {
+    font-family: 'Roboto', sans-serif;
+    width: 50vw;
+    line-height: 2vmin;
+}
+
+.aboutpage-image {
+    float: right;
+    margin: 2vmin;
+    z-index: 6;
+    position: relative;
+}
+
+/********************* contact page -contact_us.html *****************/
+
+.contactpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 115vh;
+    background: url(img/hardware.jpg) no-repeat center;
+}
+
+.input-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 75vh;
+    background-color:rgba(0, 0, 0, 0.4);
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+}
+
+.input-info p {
+    margin: 10px;
+}
+
+.input-info input[type=text], textarea {
+    width: 40vmin;
+    height: 3vmin;
+    margin: 1vmin;
+}
+
+.input-info label {
+    font-weight: 800;
+}
+
+.input-info input[type=submit] {
+    background-color: rgb(17, 230, 17);
+    border: 1px solid green;
+    width: 100px;
+    height: 40px;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+}
+
+
+
+
+/********************* log in page -login.html *****************/
+
+.login-body {
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/laptop.jpg); 
+    background-size: cover;
+    position: relative;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.4);
+    height: 60vh;
+    width: 25vw;
+}
+
+.login-box h2 {
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(17, 230, 17);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+}
+
+.login-box form {
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box input {
+    height: 40px;
+    font-size: 16px;
+}
+.login-btn {
+    background-color: rgb(17, 230, 17);
+    border: 1px solid green;
+    width: 100px;
+    height: 40px;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+}
+
+.login-text {
+    font-family: 'Roboto Mono', monospace;
+    margin: 15px;
+    text-decoration: none;
+}
+
+/********************* footer for all pages *****************/
+
+
+footer {
+    background-color: black;
+    height: 8vh;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer img {
+    width: 80px;
+    height: 80px;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(17, 230, 17);
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.social-icons {
+    display: flex;
+    width: 40%;
+}
+
+.social-icons li {
+    list-style-type: none;
+    text-decoration: none; 
+}
+
+.social-icons ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa {  
+    padding: 10px;  
+  text-align: center;  
+    margin: 5px 2px;  
+    font-size: 30px;  
+    width: 50px;
+}  
+
+.fa-twitter {  
+    background: black;  
+    color:  rgb(17, 230, 17);  
+}  
+
+.fa-linkedin {  
+    background: black;  
+    color:  rgb(17, 230, 17);  
+}  
+
+.fa-instagram {  
+    background: black;  
+    color: rgb(17, 230, 17);  
+}  
+
+.fa-youtube {  
+    background: black;  
+    color: rgb(17, 230, 17);  
+}  
+
+/************** responsive **************/
+
+@media screen and (max-width: 1700px) {
+    .locations-section {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .locations-info {
+        width: 40%;
+    }
+
+    .locations-img {
+        margin: 5%;
+    }
+
+    .box-two {   
+        margin: -600px 0px 0px -50px;
+    }
+
+}
+
+@media screen and (min-width: 1100px){
+      .about-section p {
+          width: 100%;
+      }
+  }
+
+@media screen and (max-width: 1100px){
+
+ 
+    .box-one, .box-two, .box-three {
+          display: none;
+    }
+
+    .about-section {
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+    .text-box {
+        width: 70%;
+    }
+
+    .about-section p {
+        height: 100%;
+        width: 100%;
+    }
+
+    .about-section img {
+        margin: 5%;
+    }
+
+    .locations-section {
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+
+    .nav {
+        flex-direction: column;
+    } 
+      
+    .nav-links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }  
+      
+    .nav-links li {
+          margin: 10px;
+          text-transform: uppercase;
+    }
+
+    .hero-text {
+        width: 70%;
+        font-size: 2rem;
+  }
+
+  .about-section p {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .text-box {
+      width: 90%;
+  }
+
+  .locations-info {
+    width: 90%;
+  }
+
+  footer {
+      flex-direction: column;
+      border: 1px solid red; 
+  }
+
+  footer p {
+      
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+    .hero-text {
+        font-size: 1.5rem;
+    }
+
+    .logo p {
+        display: none;
+    }
+    
+    .about-section img {
+        width: 90%;
+        height: auto;
+      }
+
+    .locations-info {
+
+    }
+
+    footer {
+        height: auto;
+    }
+
+
+}
